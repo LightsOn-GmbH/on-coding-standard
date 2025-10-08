@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="LightsOnCodingStandard">
+
+    <!-- Squiz excludes -->
+    <exclude name="Squiz.ControlStructures.ControlSignature"/>
+    <exclude name="Squiz.ControlStructures.MultiLineCondition"/>
+
+    <!-- Include PSR12 Standard -->
+    <rule ref="PSR12">
+        <type>error</type>
+    </rule>
+
+    <!-- Generic -->
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax">
+        <type>error</type>
+    </rule>
+    <rule ref="Generic.Files.LineLength">
+        <type>warning</type>
+    </rule>
+
+    <!-- Slevomat Coding Standard excludes -->
+    <rule ref="Squiz.ControlStructures.MultiLineCondition">
+        <severity>0</severity>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly">
+        <severity>0</severity>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Classes.ForbiddenPublicProperty">
+        <severity>0</severity>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingTraversableTypeHintSpecification">
+        <severity>0</severity>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingTraversableTypeHintSpecification">
+        <severity>0</severity>
+    </rule>
+
+
+    <!-- Arrays -->
+    <rule ref="SlevomatCodingStandard.Arrays.AlphabeticallySortedByKeys">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Arrays.ArrayAccess">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Arrays.DisallowPartiallyKeyed">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma">
+        <type>error</type>
+    </rule>
+
+    <!-- Classes -->
+    <rule ref="SlevomatCodingStandard.Classes.ClassStructure">
+        <type>warning</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Classes.ClassMemberSpacing">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Classes.ForbiddenPublicProperty">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Classes.MethodSpacing">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Classes.PropertyDeclaration">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Classes.PropertySpacing">
+        <type>error</type>
+        <properties>
+            <property name="minLinesCountBeforeWithComment" value="1" />
+            <property name="maxLinesCountBeforeWithComment" value="1" />
+            <property name="minLinesCountBeforeWithoutComment" value="1" />
+            <property name="maxLinesCountBeforeWithoutComment" value="1" />
+        </properties>
+    </rule>
+
+    <!-- ControlStructures -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowTrailingMultiLineTernaryOperator">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireMultiLineCondition">
+        <type>error</type>
+        <properties>
+            <property name="minLineLength" value="0"/>
+            <property name="booleanOperatorOnPreviousLine" value="1"/>
+            <property name="alwaysSplitAllConditionParts" value="1"/>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullSafeObjectOperator">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireTernaryOperator">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison">
+        <type>error</type>
+    </rule>
+
+    <!-- Functions -->
+    <rule ref="SlevomatCodingStandard.Functions.UselessParameterDefaultValue">
+        <type>error</type>
+    </rule>
+
+    <!-- Namespaces -->
+    <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Namespaces.MultipleUsesPerLine">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing">
+        <type>error</type>
+    </rule>
+
+    <!-- Operators -->
+    <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators">
+        <type>error</type>
+    </rule>
+
+    <!-- PHP -->
+    <rule ref="SlevomatCodingStandard.PHP.UselessParentheses">
+        <type>error</type>
+    </rule>
+
+    <!-- TypeHints -->
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+        <type>error</type>
+        <properties>
+            <property name="spacesCountAroundEqualsSign" value="0" />
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing">
+        <type>error</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint">
+        <type>error</type>
+    </rule>
+
+    <!-- Whitespaces -->
+    <rule ref="SlevomatCodingStandard.Whitespaces.DuplicateSpaces">
+        <type>error</type>
+        <properties>
+            <property name="ignoreSpacesInComment" value="true" />
+        </properties>
+    </rule>
+
+    <!-- Strings -->
+    <rule ref="Squiz.Strings.DoubleQuoteUsage">
+        <type>error</type>
+    </rule>
+</ruleset>

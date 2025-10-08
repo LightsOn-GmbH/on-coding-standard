@@ -1,0 +1,14 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: LightsOn-GmbH/on-semantic-release-action@v1.0.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
