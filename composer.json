@@ -1,5 +1,5 @@
 {
-    "name": "lightson/coding-standard",
+    "name": "lightson/on-coding-standard",
     "type" : "phpcodesniffer-standard",
     "config": {
         "allow-plugins": {
