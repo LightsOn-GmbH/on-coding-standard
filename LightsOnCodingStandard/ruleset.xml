@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ruleset name="LightsOnCodingStandard">
 
-    <!-- Squiz excludes -->
-    <exclude name="Squiz.ControlStructures.ControlSignature"/>
-    <exclude name="Squiz.ControlStructures.MultiLineCondition"/>
-
     <!-- Include PSR12 Standard -->
     <rule ref="PSR12">
         <type>error</type>
@@ -19,9 +15,6 @@
     </rule>
 
     <!-- Slevomat Coding Standard excludes -->
-    <rule ref="Squiz.ControlStructures.MultiLineCondition">
-        <severity>0</severity>
-    </rule>
     <rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly">
         <severity>0</severity>
     </rule>
@@ -202,10 +195,5 @@
         <properties>
             <property name="ignoreSpacesInComment" value="true" />
         </properties>
-    </rule>
-
-    <!-- Strings -->
-    <rule ref="Squiz.Strings.DoubleQuoteUsage">
-        <type>error</type>
     </rule>
 </ruleset>
