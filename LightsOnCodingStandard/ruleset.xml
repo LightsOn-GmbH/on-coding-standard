@@ -162,10 +162,7 @@
 
     <!-- TypeHints -->
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
-        <type>error</type>
-        <properties>
-            <property name="spacesCountAroundEqualsSign" value="0" />
-        </properties>
+        <severity>0</severity>
     </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints">
         <type>error</type>
@@ -195,5 +192,10 @@
         <properties>
             <property name="ignoreSpacesInComment" value="true" />
         </properties>
+    </rule>
+
+    <!-- Disable PSR1 side effect rule (common in TYPO3 bootstrap/config files) -->
+    <rule ref="PSR1.Files.SideEffects.FoundWithSymbols">
+        <severity>0</severity>
     </rule>
 </ruleset>
