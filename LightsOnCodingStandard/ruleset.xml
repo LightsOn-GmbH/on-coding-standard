@@ -35,7 +35,7 @@
 
     <!-- Arrays -->
     <rule ref="SlevomatCodingStandard.Arrays.AlphabeticallySortedByKeys">
-        <type>error</type>
+        <severity>0</severity>
     </rule>
     <rule ref="SlevomatCodingStandard.Arrays.ArrayAccess">
         <type>error</type>
