@@ -149,8 +149,6 @@
     <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing">
         <type>error</type>
     </rule>
-
-    <!-- Operators -->
     <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators">
         <type>error</type>
     </rule>
